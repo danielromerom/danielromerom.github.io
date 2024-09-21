@@ -436,12 +436,12 @@ h3 {
         display: grid;
         grid-gap:30px;
         grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(10, 1fr);
         padding-left: 30px;
         padding-right: 30px;
 
         @media (max-width:1024px) {
-            grid-template-rows: repeat (6, 1fr);
+            grid-template-rows: repeat (12, 1fr);
         }
         .bento-item {
             padding:30px;
@@ -489,7 +489,7 @@ h3 {
                 grid-column: span 2;
                 grid-row: span 2;
                 @media (max-width:1024px) {
-                    grid-template-rows: repeat (6, 1fr);
+                    grid-template-rows: repeat (12, 1fr);
                     grid-column: span 2;
                     grid-row: span 2;
                 }
@@ -498,7 +498,7 @@ h3 {
                 grid-column: span 3;
                 grid-row: span 3;
                 @media (max-width:1024px) {
-                    grid-template-rows: repeat (6, 1fr);
+                    grid-template-rows: repeat (12, 1fr);
                     grid-column: span 3;
                     grid-row: span 2;
                 }
@@ -507,7 +507,7 @@ h3 {
                 grid-column: span 3;
                 grid-row: span 2;
                 @media (max-width:1024px) {
-                    grid-template-rows: repeat (6, 1fr);
+                    grid-template-rows: repeat (12, 1fr);
                     grid-column: span 3;
                     grid-row: span 2;
                 }
@@ -516,7 +516,7 @@ h3 {
                 grid-column: span 1;
                 grid-row: span 1;
                 @media (max-width:1024px) {
-                    grid-template-rows: repeat (6, 1fr);
+                    grid-template-rows: repeat (12, 1fr);
                     grid-column: span 2;
                     grid-row: span 1;
                 }
@@ -525,7 +525,7 @@ h3 {
                 grid-column: span 1;
                 grid-row: span 1;
                 @media (max-width:1024px) {
-                    grid-template-rows: repeat (6, 1fr);
+                    grid-template-rows: repeat (12, 1fr);
                     grid-column: span 1;
                     grid-row: span 4;
                 }
@@ -534,7 +534,7 @@ h3 {
                 grid-column: span 2;
                 grid-row: span 4;
                 @media (max-width:1024px) {
-                    grid-template-rows: repeat (6, 1fr);
+                    grid-template-rows: repeat (12, 1fr);
                     grid-column: span 2;
                     grid-row: span 4;
                 }
@@ -543,7 +543,7 @@ h3 {
                 grid-column: span 1;
                 grid-row: span 4;
                 @media (max-width:1024px) {
-                    grid-template-rows: repeat (6, 1fr);
+                    grid-template-rows: repeat (12, 1fr);
                     grid-column: span 3;
                     grid-row: span 4;
                 }
@@ -552,7 +552,7 @@ h3 {
                 grid-column: span 3;
                 grid-row: span 3;
                 @media (max-width:1024px) {
-                    grid-template-rows: repeat (6, 1fr);
+                    grid-template-rows: repeat (12, 1fr);
                     grid-column: span 2;
                     grid-row: span 3;
                 }
@@ -561,20 +561,38 @@ h3 {
                 grid-column: span 2;
                 grid-row: span 3;
                 @media (max-width:1024px) {
-                    grid-template-rows: repeat (6, 1fr);
-                    grid-column: span 3;
-                    grid-row: span 3;
-                }
-            /*}
-            &:nth-child(10) {
-                grid-column: span 1;
-                grid-row: span 2;
-                @media (max-width:1024px) {
-                    grid-template-rows: repeat (6, 1fr);
-                    grid-column: span 1;
+                    grid-template-rows: repeat (12, 1fr);
+                    grid-column: span 4;
                     grid-row: span 2;
                 }
-            } */
+            }
+            &:nth-child(10) {
+                grid-column: span 3;
+                grid-row: span 4;
+                @media (max-width:1024px) {
+                    grid-template-rows: repeat (12, 1fr);
+                    grid-column: span 4;
+                    grid-row: span 2;
+                }
+            }
+            &:nth-child(11) {
+                grid-column: span 2;
+                grid-row: span 4;
+                @media (max-width:1024px) {
+                    grid-template-rows: repeat (12, 1fr);
+                    grid-column: span 4;
+                    grid-row: span 2;
+                }
+            }
+            &:nth-child(12) {
+                grid-column: span 3;
+                grid-row: span 4;
+                @media (max-width:1024px) {
+                    grid-template-rows: repeat (12, 1fr);
+                    grid-column: span 4;
+                    grid-row: span 2;
+                }
+            }            
         }
     }
 }
