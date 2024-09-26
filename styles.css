@@ -296,10 +296,11 @@ h2 {
     font-family: "Handjet", sans-serif;
     font-size:64px;
     line-height: 1;
-    margin-bottom: 10px;
     text-align: center;
     color: var(--base-800);
-    padding:30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-bottom:9px;
     small {
         display: block;
         font-weight: 600;
@@ -317,6 +318,7 @@ p {
     flex-direction: column;
     align-items:center;
     justify-content:center;
+    padding-bottom: 9px;
 }
 
 h3 {
@@ -405,6 +407,7 @@ h3 {
                 }
                 figcaption {
                     position: absolute;
+                    font-family: "Handjet", sans-serif;
                     bottom:0;
                     left:0;
                     right:0;
@@ -419,6 +422,7 @@ h3 {
 
                 &:hover {
                     figcaption {
+                        font-family: "Handjet", sans-serif;
                         opacity:1;
                         visibility: visible;
                     }
@@ -459,6 +463,8 @@ h3 {
                 transition: ease 1s all;
             }
             figcaption {
+                font-family: "Handjet", sans-serif;
+                font-size: 18px;
                 position: absolute;
                 bottom:0;
                 left:0;
