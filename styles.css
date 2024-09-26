@@ -476,6 +476,12 @@ h3 {
                 opacity:0;
                 visibility: hidden;
                 transition: ease 0.3s all;
+                @media (max-width:1024px) {
+                    font-size: 14px;
+                }
+                @media (max-width: 768px) {
+                    font-size: 9px;
+                }
             }
 
             &:hover {
