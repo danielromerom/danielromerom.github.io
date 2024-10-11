@@ -477,7 +477,7 @@ h3 {
                 visibility: hidden;
                 transition: ease 0.3s all;
                 @media (max-width:1024px) {
-                    font-size: 14px;
+                    font-size: 1px;
                 }
                 @media (max-width: 768px) {
                     font-size: 9px;
@@ -561,7 +561,7 @@ h3 {
                 }
             }
             &:nth-child(8) {
-                grid-column: span 3;
+                grid-column: span 1;
                 grid-row: span 3;
                 @media (max-width:1024px) {
                     grid-template-rows: repeat (12, 1fr);
@@ -579,6 +579,15 @@ h3 {
                 }
             }
             &:nth-child(10) {
+                grid-column: span 2;
+                grid-row: span 3;
+                @media (max-width:1024px) {
+                    grid-template-rows: repeat (12, 1fr);
+                    grid-column: span 4;
+                    grid-row: span 2;
+                }
+            }
+            &:nth-child(11) {
                 grid-column: span 3;
                 grid-row: span 4;
                 @media (max-width:1024px) {
@@ -587,7 +596,7 @@ h3 {
                     grid-row: span 2;
                 }
             }
-            &:nth-child(11) {
+            &:nth-child(12) {
                 grid-column: span 2;
                 grid-row: span 4;
                 @media (max-width:1024px) {
@@ -596,7 +605,7 @@ h3 {
                     grid-row: span 2;
                 }
             }
-            &:nth-child(12) {
+            &:nth-child(13) {
                 grid-column: span 3;
                 grid-row: span 4;
                 @media (max-width:1024px) {
