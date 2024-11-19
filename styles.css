@@ -490,7 +490,7 @@ h3 {
             flex-direction: column;
         }
         article {
-            background-color: var(--blue-100);
+            background-color: var(--mint);
             padding: 30px;
             border-radius:30px;
             flex:1;
