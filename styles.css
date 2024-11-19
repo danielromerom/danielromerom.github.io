@@ -13,11 +13,15 @@
     --blue-100: #8fe3ff;
     --blue-400: #2d9bc0;
     --blue-800: #014e68;
-    --teal: #00ff99;
     --teal-100: #83ffcd;
     --teal-400: #2daa78;
     --teal-800: #00623b;
-}--
+    --mint: #02C39A;
+    --pergreen: #00A896;
+    --cream: #F0F3BD;
+    --teal: #028090;
+    --lapis: #05668D;
+}
 
 body {
     font-family: "Handjet", sans-serif;
@@ -28,7 +32,7 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--teal-400);
+    color: var(--mint);
     &:hover {
         text-decoration: underline;
     }
@@ -49,15 +53,15 @@ header {
         padding:10px;
         align-items:center;
         font-weight:600;
-        color: var(--base-100);
+        color: var(--cream);
     
         .logo {
             display:flex;
             align-items:center;
             justify-content:center;
             font-size:32px;
-            background-color: var(--blue-400);
-            color: var(--blue-100);
+            background-color: var(--mint);
+            color: var(--lapis);
             height:100px;
             width:100px;
             margin-right:20px;
@@ -78,7 +82,7 @@ header {
                 -2px  2px 0 var(--base-800),
                 2px  2px 0 var(--base-800);
             padding-right:48px;
-            color:var(--blue-100);
+            color:var(--mint);
             border: #f1f1f1;
             border-radius: 10px;
         }
@@ -93,13 +97,13 @@ header {
             gap:5px;
             li {
                 display:inline-block;
-                padding-right:24px;
+                padding-right:12px;
                 a {
                     display:inline-block;
-                    padding:10px 20px;
+                    padding:10px 10px;
                     color:var(--base-100);
                     font-weight: 400;
-                    font-size:40px;
+                    font-size:36px;
                     font-family: "Handjet", sans-serif;
                     transition: color 0.3s, text-shadow 0.3s;
                     text-shadow: 
@@ -108,7 +112,7 @@ header {
                         -2px  2px 0 var(--base-800),
                         2px  2px 0 var(--base-800);
                     &:hover {
-                        background: var(--base-100);
+                        background: var(--teal-100);
                         
                         border-radius:10px;
                         text-decoration:none;
@@ -118,7 +122,7 @@ header {
         }
         .mobile-toggle {
             display:none;
-            color:var(--blue-100);
+            color:var(--mint);
             padding:10px;
             @media (max-width:768px) {
                 display:inline-block;
@@ -159,7 +163,7 @@ header {
 .button {
     display: inline-block;
     padding:10px 30px;
-    background-color: var(--teal-400);
+    background-color: var(--mint);
     color: var(--base-100);
     border-radius:10px;
     transition: ease 0.3s all;
@@ -208,7 +212,7 @@ h1 {
         font-size: 32px;
         font-weight: 500;
         flex:1;
-        background-color: var(--blue-100);
+        background-color: var(--teal-100);
         border-radius: 30px;
         padding:30px 30px;
         display:flex;
@@ -252,6 +256,118 @@ h1 {
         }
     }
 }
+
+.alumni {
+    display:flex;
+    padding: 30px 30px;
+    padding-bottom: 0px;
+    @media (max-width:1024px) {
+        flex-direction: column;
+    }
+    .alumni{
+        font-family: "Handjet", sans-serif;
+        font-size: 32px;
+        font-weight: 500;
+        flex:1;
+        background-color: var(--teal-100);
+        border-radius: 30px;
+        padding:30px 30px;
+        padding-bottom: 0px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        .call-to-action {
+            margin-top:20px;
+            margin-bottom: 0px;
+            a {
+                margin-right:10px;
+                margin-bottom: 0px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 18px;
+        }
+    
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+
+        .jobs {
+            display:flex;
+            gap:30px;
+            
+            @media (max-width:1024px) {
+                flex-direction: column;
+            }
+            article {
+                background-color: var(--mint);
+                padding: 30px;
+                margin-top: 20px;
+                padding-bottom: 0px;
+                margin-bottom: 30px;
+                border-radius:30px;
+                flex:1;
+                h3 {
+                    margin-top:10px;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                div {
+                    font-family: "Handjet", sans-serif;
+                    font-size:30px;
+                    font-weight: 450;
+                    color: var(--blue-800)
+                }
+                p {
+                    margin-bottom: 0px;
+                }
+                figure {
+                    width: 100%;
+                    padding-top: 56.25%;
+                    overflow: hidden;
+                    position: relative;
+                    border-radius:15px;
+                    img {
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        height:100%;
+                        object-fit: cover;
+                        transition: ease 1s all;
+                    }
+                    figcaption {
+                        position: absolute;
+                        font-family: "Handjet", sans-serif;
+                        bottom:0;
+                        left:0;
+                        right:0;
+                        background-color: rgba(0,0,0,0.5);
+                        color: var(--base-100);
+                        text-align: center;
+                        padding: 10px;
+                        padding-bottom: 0px;
+                        opacity:0;
+                        visibility: hidden;
+                        transition: ease 0.3s all;
+                    }
+    
+                    &:hover {
+                        figcaption {
+                            font-family: "Handjet", sans-serif;
+                            opacity:1;
+                            visibility: visible;
+                        }
+                        img {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 .logos {
     background-color: var(--base-100);
@@ -351,7 +467,7 @@ h3 {
                 margin-bottom: 20px;
                 li {
                     display: inline-block;
-                    background-color: var(--teal-400);
+                    background-color: var(--mint);
                     padding:5px 15px;
                     border-radius: 15px;
                 }
@@ -360,7 +476,7 @@ h3 {
         .right-column {
             flex: 1;
             p {
-                margin_bottom:20px;
+                margin-bottom:20px;
             }
         }
     }
